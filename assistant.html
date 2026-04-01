@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Assistant – SafePulse AI</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <span class="nav-brand">🛡️ SafePulse AI</span>
+  <button class="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="emergency.html">Emergency</a></li>
+    <li><a href="health.html">Health</a></li>
+    <li><a href="assistant.html" class="active">AI Assistant</a></li>
+    <li><a href="profile.html">Profile</a></li>
+    <li><span id="navUserLabel" style="color:var(--muted);font-size:0.85rem;padding:0.4rem 0.5rem;"></span></li>
+    <li><button id="logoutBtn" class="btn btn-outline btn-sm">Logout</button></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <span class="badge badge-violet" style="margin-bottom:0.75rem;display:inline-block;">AI-Powered</span>
+  <h1>SafePulse <span class="grad-violet">AI Assistant</span></h1>
+  <p>Ask about emergencies, health tips, nearby hospitals, or breathing exercises.</p>
+</div>
+
+<div class="section">
+  <div style="max-width:760px;margin:0 auto;">
+
+    <!-- CHAT -->
+    <div class="chat-container">
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="chips">
+        <button class="chip">I am in danger</button>
+        <button class="chip">I feel anxious</button>
+        <button class="chip">Find nearest hospital</button>
+        <button class="chip">Give breathing exercises</button>
+      </div>
+      <div class="chat-input-row">
+        <input class="form-control" id="chatInput" placeholder="Type a message…" autocomplete="off" />
+        <button class="btn btn-primary" id="sendBtn">Send</button>
+      </div>
+    </div>
+
+    <!-- INFO CARDS -->
+    <div class="grid-2" style="margin-top:2rem;">
+      <div class="card">
+        <div style="font-size:1.5rem;margin-bottom:0.5rem;">🚨</div>
+        <h4 style="margin-bottom:0.4rem;">Emergency Guidance</h4>
+        <p style="color:var(--muted);font-size:0.85rem;">Say "I am in danger" for immediate emergency instructions and SOS activation steps.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:1.5rem;margin-bottom:0.5rem;">🧘</div>
+        <h4 style="margin-bottom:0.4rem;">Wellness Support</h4>
+        <p style="color:var(--muted);font-size:0.85rem;">Ask about anxiety, breathing exercises, or mood support for instant AI-guided wellness tips.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:1.5rem;margin-bottom:0.5rem;">🏥</div>
+        <h4 style="margin-bottom:0.4rem;">Hospital Finder</h4>
+        <p style="color:var(--muted);font-size:0.85rem;">Ask "Find nearest hospital" to get a simulated list of nearby medical facilities with contact info.</p>
+      </div>
+      <div class="card">
+        <div style="font-size:1.5rem;margin-bottom:0.5rem;">💡</div>
+        <h4 style="margin-bottom:0.4rem;">Smart Recommendations</h4>
+        <p style="color:var(--muted);font-size:0.85rem;">The AI learns your patterns and suggests personalised safety and health actions throughout the day.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-copy">© 2025 SafePulse AI — AI responses are simulated. Always call 911 in a real emergency.</div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
